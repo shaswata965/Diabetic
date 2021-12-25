@@ -1,0 +1,200 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'AvenirLTStd-Roman';
+} 
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: bold !important;
+    color: #3C3C3C;
+}
+
+p, ul, ol {
+    color: #595959;
+}
+.nav-link {
+    padding: .5rem .25rem;
+    font-size: .8rem;
+}
+
+.ui-loader .ui-corner-all .ui-body-a .ui-loader-default .ui-icon-loading {display: none}
+
+.ovy-a { overflow-y: auto; }
+.ovx-a { overflow-x: auto; }
+
+.ovy-h { overflow-y: hidden; }
+.ovx-h { overflow-x: hidden; }
+
+/* Final Styles */
+
+.nav-link.disabled { color: #ededed; }
+.nav-link.active { color: var(--info); }
+hr.special {
+    max-width: 180px;
+    border-color: var(--info);
+    border-width: 2px;
+    border-radius: 20px;
+}
+.bullet {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 32px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.bullet > img {
+    width: 100%;
+    height: 100%;
+}
+
+header.position-relative {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 65px;
+}
+
+header + main {
+    padding-top: 65px;
+}
+
+.bg-info {
+    background-color: #28BCBD !important;
+	text-shadow:none;
+}
+
+.bg-info p {
+    color: #fff !important;
+	font-size: 18px;
+	text-shadow:none;
+}
+.bg-info strong{ 
+  text-shadow:none;
+}
+
+.nav-link.active {
+    color: #28BCBD;
+}
+.text-info {
+    color: #28BCBD !important;
+	font-size: 20px;
+	text-shadow: none;
+}
+
+hr.special {
+    border-color: #28BCBD;
+}
+
+.dr-mb-35 {
+    margin-bottom: 35px !important;
+}
+
+.dr-mt-35 {
+    margin-top: 35px !important;
+}
+
+
+@font-face {
+    font-family: 'AvenirLTStd-Roman';
+    src: url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),  url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.otf')  format('opentype'),
+            url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.woff') format('woff'), url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.ttf')  format('truetype'), url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AvenirLTStd-Medium';
+    src: url('../font/AvenirLTStd-Medium/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),  url('../font/AvenirLTStd-Medium/AvenirLTStd-Medium.otf')  format('opentype'),
+            url('../font/AvenirLTStd-Medium/AvenirLTStd-Medium.woff') format('woff'), url('../font/AvenirLTStd-Medium/AvenirLTStd-Medium.ttf')  format('truetype'), url('../font/AvenirLTStd-Medium/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    src: url('../font/AvenirLTStd-Book/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),  url('../font/AvenirLTStd-Book/AvenirLTStd-Book.otf')  format('opentype'),
+        url('../font/AvenirLTStd-Book/AvenirLTStd-Book.woff') format('woff'), url('../font/AvenirLTStd-Book/AvenirLTStd-Book.ttf')  format('truetype'), url('../font/AvenirLTStd-Book/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+.text-muted {
+    color: #595959 !important;
+	font-size:15px;
+}
+
+h5, h6 {
+    font-family: 'AvenirLTStd-Medium';
+    font-size: 21px;
+    color: #3C3C3C;
+}
+
+p.font-weight-bold, strong {
+    font-family: 'AvenirLTStd-Medium';
+    color: #3C3C3C;
+    font-size: 16px;
+}
+
+header strong {
+    font-family: 'AvenirLTStd-Book';
+    color: #fff;
+	text-shadow: none;
+}
+
+p:not(.font-weight-bold), ul, ol {
+    font-size: 16px;
+	text-shadow: none;
+}
+
+.list-unstyled {
+    padding-right: 0;
+}
+
+.accordion button[aria-expanded="false"]::after {
+    content: '+';
+    position: absolute;
+    right: 33px;
+}
+
+.accordion button[aria-expanded="true"]::after {
+    content: '-';
+    position: absolute;
+    right: 33px;
+	background-color: #1F1D1D;
+}
+
+.accordion .card-header .btn {
+    white-space: normal;
+    text-align: left;
+}
+
+[dir="rtl"] .accordion .card-header .btn span {
+    min-width: 90%;
+    text-align: right;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+header .justify-content-start a {
+    height: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+header .justify-content-end a {
+    display: none;
+}
