@@ -1,88 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lesson 4 - 8</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css' />
-    <script src="https://use.fontawesome.com/09675851a6.js"></script>
-        
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="../../js/index.js"></script>
-
+    <title>Diabetic Lesson 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/88b2b303d8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/space.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
 </head>
-
 <body class="bg-light" style="text-align: right; font-family: 'Times';">
     <div class="swipeable arabic">
-    <header class="shadow-sm position-relative bg-info p-3">
-        <div class="row align-items-center">
-            <div class="col d-flex justify-content-start">
-                <a href="index.html" class="text-white" rel="external"><img src="../images/icon-cross.svg" width="16px" height="16px"
-                        alt="close"></a>
+        <header class="position-relative p-3">
+            <div class="row align-items-center">
+                <div class="col-12 text-center starter-page-header">
+                    <img src="../images/lessons.PNG" alt="lessons icon" class="img-fluid lessons-icon" />&nbsp;&nbsp;&nbsp;<strong>الدرس السابع</strong>
+                </div>
             </div>
-            <div class="col text-center text-white">
-                   الدرس ٧
-            </div>
-            <div class="col d-flex justify-content-end">
-                <a href="7.html" class="text-white text-nowrap"><small>التالي</small></a>
-            </div>
-        </div>
-    </header>
+        </header>
     <main class="">
-        <nav class="nav justify-content-center timeline my-3">
-            <a href="#" class="nav-link active"><i class="fa fa-circle"></i></a>
-            <a href="#" class="nav-link active"><i class="fa fa-circle"></i></a>
-            <a href="#" class="nav-link active"><i class="fa fa-circle"></i></a>
-            <a href="#" class="nav-link active"><i class="fa fa-circle"></i></a>
-            <a href="#" class="nav-link active"><i class="fa fa-circle"></i></a>
-            <a href="#" class="nav-link active"><i class="fa fa-circle"></i></a>
-            <a href="#" class="nav-link disabled"><i class="fa fa-circle"></i></a>
+        <nav class="my-2">
+            <div class="row justify-content-between navigation-header">
+                <div class="col-1 navigation-page-count arabic-page-count">
+                    <p>٦/٧</p>
+                </div>
+                <div class="col-10 text-center indicator-set arabic-indicator-set">
+                    <a class="page-indicator page-indicator-active arabic-first-component-indicator"></a>
+                    <a class="page-indicator page-indicator-active"></a>
+                    <a class="page-indicator page-indicator-active"></a>
+                    <a class="page-indicator page-indicator-active"></a>
+                    <a class="page-indicator page-indicator-active"></a>
+                    <a class="page-indicator page-indicator-active"></a>
+                    <a class="page-indicator"></a>
+                </div>
+                <div class="col-1">
+                    <div class="col-12 d-flex">
+                        <a href="index.html" class="close-button-top arabic-close" role="button"><i class="fas fa-times-circle"></i></a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h5 class="text-center">الأدوية عن طريق الفم</h5>
-                    <hr class="special mb-5">
-                    <p>اضغط على فئات مختلفة من الدواء لمعرفة المزيد!</p>
-                    <style>
-                        .accordion button { text-decoration: none !important; }
-                        .accordion button[aria-expanded="false"]::after {
-                            content: '+';
-                        }
-                        .accordion button[aria-expanded="true"]::after {
-                            content: '-';
-                        }
-                        [dir="rtl"] .accordion button[aria-expanded="false"]::after {
-                            right: auto;
-                            left: 33px;
-                        }
-
-                        [dir="rtl"] .accordion button[aria-expanded="true"]::after {
-                            right: auto;
-                            left: 33px;
-                        }
-                    </style>
+                    <div class="card shadow border-0 mb-3">
+                        <div class="card-body">
+                    <h5 class="card-title">الأدوية عن طريق الفم</h5>
+                    <p class="card-text mb-4 mt-3 card-text-opacity">اضغط على فئات مختلفة من الدواء لمعرفة المزيد!</p>
                     <div class="accordion mb-3" id="accordionExample">
                         <div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingOne">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                        <span>متفورمن</span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-4">
+                                                <span>متفورمن</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <ul>
@@ -111,21 +97,27 @@
                         </div>
                         <div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingTwo">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        <span>السلفونيل يوريا</span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-4">
+                                                <span>السلفونيل يوريا</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample1">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <ul>
                                         <li>غليكلازايد هو الأسم العام لدياميكرون،
 غليبيزيد لمينيدياب، غليمبريد لاماريل وغليبينكلاميد لداونيل.
-</li>
+                                         </li>
                                     </ul>
                                     <p><strong>كيف يعمل؟</strong></p>
                                     <ul>
@@ -138,17 +130,24 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingThree">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <span>ثيا غلوزدين- بيوغليتازون</span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-6">
+                                                <span>ثيا غلوزدين- بيوغليتازون</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample2">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <ul>
@@ -174,15 +173,21 @@
                         </div>
                         <div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingFour">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                        <span>مثبطات- DPP-IV-(سيتاغليبتين وفيلداغلبتين)</span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-9">
+                                                <span>مثبطات- DPP-IV-(سيتاغليبتين وفيلداغلبتين)</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample3">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <p>سيتاغليبتين هو الاسم العام ل جانوفيا، فيلداغلبتين هو الاسم العام ل جلفاس </p>
@@ -206,15 +211,21 @@
                         </div>
                         <div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingFive">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
-                                        <span>ناقل مشارك صوديوم/جلوكوز 2 </span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-7">
+                                                <span>ناقل مشارك صوديوم/جلوكوز 2</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample4">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <ul>
@@ -241,15 +252,21 @@
                         </div>
                         <div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingSix">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-                                        aria-controls="collapseSix">
-                                        <span>ميغليتنايدز</span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-4">
+                                                <span>ميغليتنايدز</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample5">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <ul>
@@ -273,17 +290,24 @@
                                 </div>
                             </div>
                         </div>
+
 						<div class="card border-0 my-2">
                             <div class="card-header rounded-0 border-0 bg-info" id="headingSeven">
-                                <h5 class="mb-0 d-flex align-items-center justify-content-between">
-                                    <button class="btn btn-link btn-block d-flex align-items-center justify-content-between text-white collapsed"
-                                        type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
-                                        aria-controls="collapseSeven">
-                                        <span>مثبطات ألفا غلوكوزيداز</span>
+                                <h5 class="mb-0 align-items-center justify-content-between">
+                                    <button class="btn btn-link btn-block-droobi align-items-center justify-content-between text-white"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="row justify-content-between">
+                                            <div class="col-6">
+                                                <span>مثبطات ألفا غلوكوزيداز</span>
+                                            </div>
+                                            <div class="col-3">
+                                                <i class="fa fa-angle-down" style="font-size: 24px;font-weight: bold;color: #fff;"></i>
+                                            </div>
+                                        </div>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                            <div class="collapse" id="collapseExample6">
                                 <div class="card-body">
                                     <!-- content here -->
                                     <ul>
@@ -306,21 +330,21 @@
                             </div>
                         </div>
                     </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col d-flex justify-content-start text-left px-1">
-                    <a href="5.html" class="btn btn-link text-info mb-3" rel="external">سبق</a>
+            <div class="row justify-content-around mt-3">
+                <div class="col-5 text-left px-1">
+                    <a href="7.html" class="btn bottom-block-button mb-3" role="button">التالي</a>
                 </div>
-                <div class="col d-flex justify-content-end px-1">
-                    <a href="7.html" class="btn btn-link text-info mb-3" rel="external">التالي</a>
+                <div class="col-5 px-1">
+                    <a href="5.html" class="btn bottom-block-button mb-3" role="button">خلف</a>
                 </div>
             </div>
         </div>
     </main>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-</div>
+    </div>
 </body>
 
 </html>
